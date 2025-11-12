@@ -8,7 +8,6 @@ When counter has a nonzero value and it is reset the value becomes zero
     Go To  ${HOME_URL}
     Click Button  Nollaa
     Page Should Contain  nappia painettu 0 kertaa
-    Click Button  Paina
-    Page Should Contain  nappia painettu 1 kertaa
-    Click Button  Nollaa
-    Page Should Contain  nappia painettu 0 kertaa
+    Input Text  value  10
+    Click Button  Aseta
+    Page Should Contain  nappia painettu 10 kertaa
